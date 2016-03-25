@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainTabViewController.h
 //  Uphoto
 //
 //  Created by Ahmed Elashker on 3/25/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainTabViewController : UITabBarController
 
 @end
-
