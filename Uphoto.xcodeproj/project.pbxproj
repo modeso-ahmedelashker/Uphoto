@@ -13,9 +13,14 @@
 		BCF659201CA53A1300C19886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF6591F1CA53A1300C19886 /* Assets.xcassets */; };
 		BCF659231CA53A1300C19886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF659211CA53A1300C19886 /* LaunchScreen.storyboard */; };
 		BCF6592E1CA53A1400C19886 /* UphotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6592D1CA53A1400C19886 /* UphotoTests.m */; };
-		BCF6593E1CA53FC100C19886 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6593D1CA53FC100C19886 /* MainViewController.m */; };
 		BCF659411CA53FD000C19886 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659401CA53FD000C19886 /* MainViewModel.m */; };
 		BCF659451CA5615A00C19886 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659441CA5615A00C19886 /* MainTabViewController.m */; };
+		BCF659481CA568DA00C19886 /* FeaturedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659471CA568DA00C19886 /* FeaturedViewController.m */; };
+		BCF6594B1CA5691700C19886 /* FeaturedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6594A1CA5691700C19886 /* FeaturedViewModel.m */; };
+		BCF6594E1CA5692400C19886 /* NatureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6594D1CA5692400C19886 /* NatureViewModel.m */; };
+		BCF659511CA5693300C19886 /* TourismViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659501CA5693300C19886 /* TourismViewModel.m */; };
+		BCF659541CA5693E00C19886 /* ShoppingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659531CA5693E00C19886 /* ShoppingViewModel.m */; };
+		BCF659591CA56B2B00C19886 /* PhotosService.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659581CA56B2B00C19886 /* PhotosService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +45,23 @@
 		BCF659291CA53A1400C19886 /* UphotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UphotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF6592D1CA53A1400C19886 /* UphotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UphotoTests.m; sourceTree = "<group>"; };
 		BCF6592F1CA53A1400C19886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCF6593C1CA53FC100C19886 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		BCF6593D1CA53FC100C19886 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		BCF6593F1CA53FD000C19886 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		BCF659401CA53FD000C19886 /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
 		BCF659431CA5615A00C19886 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
 		BCF659441CA5615A00C19886 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		BCF659461CA568DA00C19886 /* FeaturedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewController.h; sourceTree = "<group>"; };
+		BCF659471CA568DA00C19886 /* FeaturedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewController.m; sourceTree = "<group>"; };
+		BCF659491CA5691700C19886 /* FeaturedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewModel.h; sourceTree = "<group>"; };
+		BCF6594A1CA5691700C19886 /* FeaturedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewModel.m; sourceTree = "<group>"; };
+		BCF6594C1CA5692400C19886 /* NatureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NatureViewModel.h; sourceTree = "<group>"; };
+		BCF6594D1CA5692400C19886 /* NatureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NatureViewModel.m; sourceTree = "<group>"; };
+		BCF6594F1CA5693300C19886 /* TourismViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourismViewModel.h; sourceTree = "<group>"; };
+		BCF659501CA5693300C19886 /* TourismViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourismViewModel.m; sourceTree = "<group>"; };
+		BCF659521CA5693E00C19886 /* ShoppingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewModel.h; sourceTree = "<group>"; };
+		BCF659531CA5693E00C19886 /* ShoppingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewModel.m; sourceTree = "<group>"; };
+		BCF659551CA5699200C19886 /* ViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelDelegate.h; sourceTree = "<group>"; };
+		BCF659571CA56B2B00C19886 /* PhotosService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosService.h; sourceTree = "<group>"; };
+		BCF659581CA56B2B00C19886 /* PhotosService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,7 @@
 				BCF659241CA53A1300C19886 /* Info.plist */,
 				BCF659211CA53A1300C19886 /* LaunchScreen.storyboard */,
 				BCF6591C1CA53A1300C19886 /* Main.storyboard */,
+				BCF659561CA56AC300C19886 /* Services */,
 				BCF659131CA53A1300C19886 /* Supporting Files */,
 				BCF659391CA53F5700C19886 /* View Controllers */,
 				BCF6593B1CA53F7900C19886 /* View Models */,
@@ -120,10 +137,10 @@
 		BCF659391CA53F5700C19886 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCF6593C1CA53FC100C19886 /* MainViewController.h */,
-				BCF6593D1CA53FC100C19886 /* MainViewController.m */,
 				BCF659431CA5615A00C19886 /* MainTabViewController.h */,
 				BCF659441CA5615A00C19886 /* MainTabViewController.m */,
+				BCF659461CA568DA00C19886 /* FeaturedViewController.h */,
+				BCF659471CA568DA00C19886 /* FeaturedViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -131,10 +148,28 @@
 		BCF6593B1CA53F7900C19886 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCF659551CA5699200C19886 /* ViewModelDelegate.h */,
 				BCF6593F1CA53FD000C19886 /* MainViewModel.h */,
 				BCF659401CA53FD000C19886 /* MainViewModel.m */,
+				BCF659491CA5691700C19886 /* FeaturedViewModel.h */,
+				BCF6594A1CA5691700C19886 /* FeaturedViewModel.m */,
+				BCF6594C1CA5692400C19886 /* NatureViewModel.h */,
+				BCF6594D1CA5692400C19886 /* NatureViewModel.m */,
+				BCF6594F1CA5693300C19886 /* TourismViewModel.h */,
+				BCF659501CA5693300C19886 /* TourismViewModel.m */,
+				BCF659521CA5693E00C19886 /* ShoppingViewModel.h */,
+				BCF659531CA5693E00C19886 /* ShoppingViewModel.m */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BCF659561CA56AC300C19886 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BCF659571CA56B2B00C19886 /* PhotosService.h */,
+				BCF659581CA56B2B00C19886 /* PhotosService.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +274,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF659181CA53A1300C19886 /* AppDelegate.m in Sources */,
+				BCF6594E1CA5692400C19886 /* NatureViewModel.m in Sources */,
 				BCF659451CA5615A00C19886 /* MainTabViewController.m in Sources */,
-				BCF6593E1CA53FC100C19886 /* MainViewController.m in Sources */,
 				BCF659151CA53A1300C19886 /* main.m in Sources */,
+				BCF659511CA5693300C19886 /* TourismViewModel.m in Sources */,
+				BCF659481CA568DA00C19886 /* FeaturedViewController.m in Sources */,
+				BCF659591CA56B2B00C19886 /* PhotosService.m in Sources */,
+				BCF6594B1CA5691700C19886 /* FeaturedViewModel.m in Sources */,
+				BCF659541CA5693E00C19886 /* ShoppingViewModel.m in Sources */,
 				BCF659411CA53FD000C19886 /* MainViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

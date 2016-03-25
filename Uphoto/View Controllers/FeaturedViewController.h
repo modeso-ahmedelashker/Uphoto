@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  FeaturedViewController.h
 //  Uphoto
 //
 //  Created by Ahmed Elashker on 3/25/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface FeaturedViewController : UIViewController
 
 @end
