@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^FailureBlock)(NSString *errorMsg);
-typedef void(^SuccessBlock)(id result);
+typedef void(^SuccessBlock)(NSMutableArray *result);
 
 @interface PhotosService : NSObject
 

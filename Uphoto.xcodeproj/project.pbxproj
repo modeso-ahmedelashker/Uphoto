@@ -21,6 +21,10 @@
 		BCF659511CA5693300C19886 /* TourismViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659501CA5693300C19886 /* TourismViewModel.m */; };
 		BCF659541CA5693E00C19886 /* ShoppingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659531CA5693E00C19886 /* ShoppingViewModel.m */; };
 		BCF659591CA56B2B00C19886 /* PhotosService.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659581CA56B2B00C19886 /* PhotosService.m */; };
+		BCF6595C1CA576D000C19886 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6595B1CA576D000C19886 /* PhotoCell.m */; };
+		BCF659611CA577C700C19886 /* Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659601CA577C700C19886 /* Gallery.m */; };
+		BCF659641CA577EC00C19886 /* GalleryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659631CA577EC00C19886 /* GalleryItem.m */; };
+		C3AD32A76FD6CFA31F54FAB6 /* libPods-Uphoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21824AF1F54F66C067FE0D4 /* libPods-Uphoto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B8CCF2074D37E9EE2827997 /* Pods-Uphoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uphoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uphoto/Pods-Uphoto.release.xcconfig"; sourceTree = "<group>"; };
+		B21824AF1F54F66C067FE0D4 /* libPods-Uphoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Uphoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF659101CA53A1300C19886 /* Uphoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uphoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF659141CA53A1300C19886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCF659161CA53A1300C19886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +68,13 @@
 		BCF659551CA5699200C19886 /* ViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelDelegate.h; sourceTree = "<group>"; };
 		BCF659571CA56B2B00C19886 /* PhotosService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosService.h; sourceTree = "<group>"; };
 		BCF659581CA56B2B00C19886 /* PhotosService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosService.m; sourceTree = "<group>"; };
+		BCF6595A1CA576D000C19886 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		BCF6595B1CA576D000C19886 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		BCF6595F1CA577C700C19886 /* Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gallery.h; sourceTree = "<group>"; };
+		BCF659601CA577C700C19886 /* Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gallery.m; sourceTree = "<group>"; };
+		BCF659621CA577EC00C19886 /* GalleryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryItem.h; sourceTree = "<group>"; };
+		BCF659631CA577EC00C19886 /* GalleryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryItem.m; sourceTree = "<group>"; };
+		EDF827B51BCA5F464A6F358A /* Pods-Uphoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uphoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uphoto/Pods-Uphoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AD32A76FD6CFA31F54FAB6 /* libPods-Uphoto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +102,8 @@
 				BCF659121CA53A1300C19886 /* Uphoto */,
 				BCF6592C1CA53A1400C19886 /* UphotoTests */,
 				BCF659111CA53A1300C19886 /* Products */,
+				F8DBC2DEEBB9CEC115A2CA8C /* Pods */,
+				BE6C71B14A66B200173B1BF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +125,7 @@
 				BCF659241CA53A1300C19886 /* Info.plist */,
 				BCF659211CA53A1300C19886 /* LaunchScreen.storyboard */,
 				BCF6591C1CA53A1300C19886 /* Main.storyboard */,
+				BCF6595E1CA577BA00C19886 /* Models */,
 				BCF659561CA56AC300C19886 /* Services */,
 				BCF659131CA53A1300C19886 /* Supporting Files */,
 				BCF659391CA53F5700C19886 /* View Controllers */,
@@ -137,6 +154,8 @@
 		BCF659391CA53F5700C19886 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BCF6595A1CA576D000C19886 /* PhotoCell.h */,
+				BCF6595B1CA576D000C19886 /* PhotoCell.m */,
 				BCF659431CA5615A00C19886 /* MainTabViewController.h */,
 				BCF659441CA5615A00C19886 /* MainTabViewController.m */,
 				BCF659461CA568DA00C19886 /* FeaturedViewController.h */,
@@ -172,6 +191,34 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		BCF6595E1CA577BA00C19886 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCF6595F1CA577C700C19886 /* Gallery.h */,
+				BCF659601CA577C700C19886 /* Gallery.m */,
+				BCF659621CA577EC00C19886 /* GalleryItem.h */,
+				BCF659631CA577EC00C19886 /* GalleryItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE6C71B14A66B200173B1BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21824AF1F54F66C067FE0D4 /* libPods-Uphoto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8DBC2DEEBB9CEC115A2CA8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDF827B51BCA5F464A6F358A /* Pods-Uphoto.debug.xcconfig */,
+				1B8CCF2074D37E9EE2827997 /* Pods-Uphoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCF659321CA53A1400C19886 /* Build configuration list for PBXNativeTarget "Uphoto" */;
 			buildPhases = (
+				16C11DAC82BA5BD606E158CE /* Check Pods Manifest.lock */,
 				BCF6590C1CA53A1300C19886 /* Sources */,
 				BCF6590D1CA53A1300C19886 /* Frameworks */,
 				BCF6590E1CA53A1300C19886 /* Resources */,
+				2BA9CB6DC80E200F30FD901D /* Embed Pods Frameworks */,
+				66816FCAB0D62DD0685DBDA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,11 +318,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16C11DAC82BA5BD606E158CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BA9CB6DC80E200F30FD901D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uphoto/Pods-Uphoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66816FCAB0D62DD0685DBDA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uphoto/Pods-Uphoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCF6590C1CA53A1300C19886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF6595C1CA576D000C19886 /* PhotoCell.m in Sources */,
 				BCF659181CA53A1300C19886 /* AppDelegate.m in Sources */,
 				BCF6594E1CA5692400C19886 /* NatureViewModel.m in Sources */,
 				BCF659451CA5615A00C19886 /* MainTabViewController.m in Sources */,
@@ -280,6 +379,8 @@
 				BCF659511CA5693300C19886 /* TourismViewModel.m in Sources */,
 				BCF659481CA568DA00C19886 /* FeaturedViewController.m in Sources */,
 				BCF659591CA56B2B00C19886 /* PhotosService.m in Sources */,
+				BCF659641CA577EC00C19886 /* GalleryItem.m in Sources */,
+				BCF659611CA577C700C19886 /* Gallery.m in Sources */,
 				BCF6594B1CA5691700C19886 /* FeaturedViewModel.m in Sources */,
 				BCF659541CA5693E00C19886 /* ShoppingViewModel.m in Sources */,
 				BCF659411CA53FD000C19886 /* MainViewModel.m in Sources */,
@@ -406,6 +507,7 @@
 		};
 		BCF659331CA53A1400C19886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF827B51BCA5F464A6F358A /* Pods-Uphoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -419,6 +521,7 @@
 		};
 		BCF659341CA53A1400C19886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8CCF2074D37E9EE2827997 /* Pods-Uphoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -473,6 +576,7 @@
 				BCF659341CA53A1400C19886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCF659351CA53A1400C19886 /* Build configuration list for PBXNativeTarget "UphotoTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +585,7 @@
 				BCF659371CA53A1400C19886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
