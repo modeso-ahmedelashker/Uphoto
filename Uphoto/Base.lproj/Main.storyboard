@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="80" id="p2c-1e-42R"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="GMv-58-DM5" kind="embed" id="j17-uv-mss"/>
+                                    <segue destination="GMv-58-DM5" kind="embed" identifier="topEmbed" id="j17-uv-mss"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -126,7 +126,7 @@
                                     <constraint firstAttribute="height" constant="80" id="XKU-oo-Vpe"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="GMv-58-DM5" kind="embed" id="LEK-lz-Ugm"/>
+                                    <segue destination="GMv-58-DM5" kind="embed" identifier="topEmbed" id="LEK-lz-Ugm"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -220,7 +220,11 @@
         <!--View Controller-->
         <scene sceneID="3n2-IX-gp5">
             <objects>
-                <viewController id="GMv-58-DM5" sceneMemberID="viewController">
+                <viewController id="GMv-58-DM5" customClass="UPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uV2-if-ICM"/>
+                        <viewControllerLayoutGuide type="bottom" id="1rU-0P-MUu"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HjR-I5-KPR" userLabel="White BG View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,6 +254,9 @@
                                         <state key="normal" title="Upload">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectPhoto:" destination="GMv-58-DM5" eventType="touchUpInside" id="5Kh-WC-jl1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAp-2K-OOc">
                                         <rect key="frame" x="102" y="15" width="40" height="21"/>

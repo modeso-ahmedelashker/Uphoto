@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396ED0CC1CA834E1006C4475 /* UPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396ED0CB1CA834E1006C4475 /* UPViewController.m */; };
 		BCF659151CA53A1300C19886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659141CA53A1300C19886 /* main.m */; };
 		BCF659181CA53A1300C19886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF659171CA53A1300C19886 /* AppDelegate.m */; };
 		BCF6591E1CA53A1300C19886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF6591C1CA53A1300C19886 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		1B8CCF2074D37E9EE2827997 /* Pods-Uphoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uphoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uphoto/Pods-Uphoto.release.xcconfig"; sourceTree = "<group>"; };
+		396ED0CA1CA834E1006C4475 /* UPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPViewController.h; sourceTree = "<group>"; };
+		396ED0CB1CA834E1006C4475 /* UPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPViewController.m; sourceTree = "<group>"; };
 		B21824AF1F54F66C067FE0D4 /* libPods-Uphoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Uphoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF659101CA53A1300C19886 /* Uphoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uphoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF659141CA53A1300C19886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,8 +71,8 @@
 		BCF659551CA5699200C19886 /* ViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelDelegate.h; sourceTree = "<group>"; };
 		BCF659571CA56B2B00C19886 /* PhotosService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosService.h; sourceTree = "<group>"; };
 		BCF659581CA56B2B00C19886 /* PhotosService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosService.m; sourceTree = "<group>"; };
-		BCF6595A1CA576D000C19886 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
-		BCF6595B1CA576D000C19886 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		BCF6595A1CA576D000C19886 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCell.h; path = ../PhotoCell.h; sourceTree = "<group>"; };
+		BCF6595B1CA576D000C19886 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCell.m; path = ../PhotoCell.m; sourceTree = "<group>"; };
 		BCF6595F1CA577C700C19886 /* Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gallery.h; sourceTree = "<group>"; };
 		BCF659601CA577C700C19886 /* Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gallery.m; sourceTree = "<group>"; };
 		BCF659621CA577EC00C19886 /* GalleryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryItem.h; sourceTree = "<group>"; };
@@ -96,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		396ED0BF1CA82574006C4475 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				396ED0CA1CA834E1006C4475 /* UPViewController.h */,
+				396ED0CB1CA834E1006C4475 /* UPViewController.m */,
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
+		396ED0C91CA833EC006C4475 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCF6595A1CA576D000C19886 /* PhotoCell.h */,
+				BCF6595B1CA576D000C19886 /* PhotoCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		BCF659071CA53A1300C19886 = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +175,8 @@
 		BCF659391CA53F5700C19886 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCF6595A1CA576D000C19886 /* PhotoCell.h */,
-				BCF6595B1CA576D000C19886 /* PhotoCell.m */,
+				396ED0C91CA833EC006C4475 /* Cells */,
+				396ED0BF1CA82574006C4475 /* Super */,
 				BCF659431CA5615A00C19886 /* MainTabViewController.h */,
 				BCF659441CA5615A00C19886 /* MainTabViewController.m */,
 				BCF659461CA568DA00C19886 /* FeaturedViewController.h */,
@@ -384,6 +405,7 @@
 				BCF6594B1CA5691700C19886 /* FeaturedViewModel.m in Sources */,
 				BCF659541CA5693E00C19886 /* ShoppingViewModel.m in Sources */,
 				BCF659411CA53FD000C19886 /* MainViewModel.m in Sources */,
+				396ED0CC1CA834E1006C4475 /* UPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

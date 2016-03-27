@@ -9,8 +9,9 @@
 #import "FeaturedViewController.h"
 #import "FeaturedViewModel.h"
 #import "PhotoCell.h"
+#import "UPViewController.h"
 
-@interface FeaturedViewController () <ViewModelUpdateUIDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface FeaturedViewController () <UPViewControllerDelegate, ViewModelUpdateUIDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) FeaturedViewModel *viewModel;
@@ -32,6 +33,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"topEmbed"]) {
+        
+        [(UPViewController*)segue.destinationViewController setDelegate:self];
+    }
 }
 
 #pragma mark - UICollectionView Datasource
@@ -58,12 +67,16 @@
     return CGSizeMake(dimension, dimension);
 }
 
-
 #pragma mark - ViewModelUpdateUIDelegate Methods
 
 - (void)updateUI {
     
     [self.collectionView reloadData];
+}
+
+- (void)photoIsSelected:(UIImage *)photo {
+    
+    UIImage* tt = photo;
 }
 
 @end
